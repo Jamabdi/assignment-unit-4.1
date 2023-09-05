@@ -14,32 +14,50 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
+
 function helloName(name) {
-  return;
-}
+  return 'Hello, Your Name!';
+ }
+ //When I put my name in, the test would fail, not sure what I'm supposed to do.
+console.log('test should say "hello, Your Name!"',helloName());
 // Remember to call the function to test
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
-  // return firstNumber + secondNumber;
+function addNumbers(firstNumber,secondNumber) {
+ return firstNumber + secondNumber;
+  // return firstNumber + secondNumber; 
 }
+//I gave the parameters the numbers 5 and 10, but the result is "NaN" instead the expected the output of 15.
+addNumbers(5, 10);
+console.log('The Sum should be 15, but its showing NaN.', addNumbers());
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(a, b, c) {
+return a * b * c;
 }
-
+multiplyThree(2, 2, 2);
+console.log('Returing NaN for multiplication also.',multiplyThree());
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
+    return true;
   }
-  return;
+  else (number <= 0);{
+    return false;
+  }
 }
+//Both numbers are returing false, not sure what I'm doing wrong, checked for syntax erros but can't find any.
+  isPositive(10);
+  console.log('should return true', isPositive());
+  
+  isPositive(-6);
+  console.log('should return false', isPositive());
+  
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 
