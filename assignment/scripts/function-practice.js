@@ -49,9 +49,7 @@ function isPositive(number) {
   else (number <= 0);{
     return false;
   }
-}
-//Both numbers are returing false, not sure what I'm doing wrong, checked for syntax erros but can't find any.
-  isPositive;
+} isPositive;
   console.log('should return true', isPositive(10));
   
   isPositive;
@@ -73,9 +71,20 @@ console.log(getLast());
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find(value, array) {
-
+let secondArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let valueToFind = 10
+function findValue(){
+  // for(i = 0; i < secondArray.length; i++)
+  for(value of secondArray){
+   if(value === valueToFind){
+    console.log(true)
+  }
+  else{
+    console.log(false);
+  }
 }
+}
+console.log(findValue());
 
 // ----------------------
 // Stretch Goals
