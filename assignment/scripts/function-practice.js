@@ -51,11 +51,11 @@ function isPositive(number) {
   }
 }
 //Both numbers are returing false, not sure what I'm doing wrong, checked for syntax erros but can't find any.
-  isPositive(10);
-  console.log('should return true', isPositive());
+  isPositive;
+  console.log('should return true', isPositive(10));
   
-  isPositive(-6);
-  console.log('should return false', isPositive());
+  isPositive;
+  console.log('should return false', isPositive(-6));
   
 
 // Call the function to test each outcome (true & false) 
