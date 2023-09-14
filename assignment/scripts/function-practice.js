@@ -64,9 +64,11 @@ function isPositive(number) {
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+let exampleArray = [1, 2, 3, 4, 5];
 function getLast(array) {
-
+return exampleArray.length-1;
 }
+console.log(getLast());
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
